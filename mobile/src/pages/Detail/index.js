@@ -19,7 +19,7 @@ export default function Detail(){
   function sendMail(){
     MailComposer.composeAsync({
       subject: "Herói do caso: Cachorro para adoção",
-      recipients: "marlon.r@unemat.br",
+      recipients: ["marlon.r@unemat.br"],
       body: message
     })
   }
