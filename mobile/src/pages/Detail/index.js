@@ -1,8 +1,8 @@
 import React from 'react';
 import { View, Image, Text, TouchableOpacity, Linking } from 'react-native';
 import { Feather } from '@expo/vector-icons';
-import { useNavigation } from '@react-navigation/native'
-import * as MailComposer from 'expo-mail-composer'
+import { useNavigation } from '@react-navigation/native';
+import * as MailComposer from 'expo-mail-composer';
 
 import logoImg from "../../assets/logo.png";
 
@@ -10,7 +10,7 @@ import styles from './styles';
 
 export default function Detail(){
   const navigation = useNavigation();
-  const message = 'Olá Sem Cão estou entrando em contato poós gostaria de ajudar no caso "adoção de cachorro" com valor de "R$120"'
+  const message = 'Olá ONG estou entrando em contato pois gostaria de ajudar no caso "adoção de cachorro"'
 
   function navigateBack(){
     navigation.goBack();
@@ -24,7 +24,7 @@ export default function Detail(){
     })
   }
   function sendWhastapp(){
-    Linking.openURL(`whatsapp://send?phone=65984060387&text=${message}`);
+    Linking.openURL(`whatsapp://send?phone=+556584060387&text=${message}`);
   }
 
   return (
