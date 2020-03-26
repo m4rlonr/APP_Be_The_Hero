@@ -12,20 +12,20 @@ export default StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center'
   },
-  incident: {
+  Incident: {
     padding: 24,
     borderRadius: 8,
     backgroundColor: '#fff',
     marginBottom: 16,
     marginTop: 48
   },
-  incidentProperty: {
+  IncidentProperty: {
     fontSize: 14,
     color: '#41414d',
     fontWeight: "bold",
     marginTop: 24
   },
-  incidentValue: {
+  IncidentValue: {
     marginTop: 8,
     fontSize: 15,
     color: '#737380',

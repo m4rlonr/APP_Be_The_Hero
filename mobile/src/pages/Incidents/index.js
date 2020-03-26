@@ -53,6 +53,26 @@ export default function Incidents() {
           </View>
         }}
       />
+      <View style={styles.IncidentList}>
+        <View style={styles.Incident}>
+          <Text style={styles.IncidentProperty}>ONG: </Text>
+          <Text style={styles.IncidentValue}>Sem Cachorro </Text>
+
+          <Text style={styles.IncidentProperty}>CASO: </Text>
+          <Text style={styles.IncidentValue}>Cachorro para adoção</Text>
+
+          <Text style={styles.IncidentProperty}>VALOR: </Text>
+          <Text style={styles.IncidentValue}>R$ 120 </Text>
+
+          <TouchableOpacity
+            style={styles.detailButton}
+            onPress={navegationToDetail}
+          >
+            <Text style={styles.detailButtonText}>Ver mais detalhes</Text>
+            <Feather name="arrow-right" size={16} color='#e02041'/>
+          </TouchableOpacity>
+        </View>
+      </View>
     </View>
   );
 }
