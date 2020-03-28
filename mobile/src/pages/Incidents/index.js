@@ -27,7 +27,7 @@ export default function Incidents() {
       return;
     };
 
-    if(total > 0 && incident.length === total){
+    if (total > 0 && incidents.length === total) {
       return;
     }
 
@@ -38,7 +38,7 @@ export default function Incidents() {
     });
 
     setIncidents([...incidents, ...response.data]);
-    setTotal(response.headers['X-total-count']);
+    setTotal(response.headers["x-total-count"]);
     setPage(page + 1);
     setLoading(false);
   };
@@ -52,7 +52,7 @@ export default function Incidents() {
       <View style={styles.header}>
         <Image source={logoImg} />
         <Text style={styles.headerText}>
-          Total de <Text style={styles.headerTextBold}>{ total } casos</Text>.
+          Total de <Text style={styles.headerTextBold}>{total} casos</Text>.
         </Text>
       </View>
 
