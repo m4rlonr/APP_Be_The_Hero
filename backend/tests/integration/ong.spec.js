@@ -16,10 +16,10 @@ describe("ONG", () => {
     const response = await request(app)
       .post("/ongs")
       .send({
-        name: "APAD2",
-        email: "contato@gmail.com",
-        whatsapp: "6500000000",
-        city: "Jangada",
+        name : "Marlon Pet",
+        email : "mrodrigues@unemat.br",
+        whatsapp : "6500000000",
+        city : "Sapezal",
         uf: "MT"
       });
 
